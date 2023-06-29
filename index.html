@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>To-do List</h1>
+
+    <div class="caixas">
+        <div class="frase">
+            <h4 class="frase__titulo">Frase do dia</h4>
+            <p class="frase__texto" id="fraseDia"></p>
+        </div>
+        
+        <form class="formulario" id="form">
+            <h4 class="formulario__titulo">Adicione uma tarefa</h4>
+            <label for="tarefa" class="label">Tarefa:</label>
+            <input type="text" id="tarefa" class="tarefa">
+            <input type="submit" value="Adicionar" class="adicionar" id="add">
+        </form>
+    </div>
+
+    <div class="status">
+        <div class="a-fazer">
+            <h2 class="status__titulo">A fazer</h2>
+            
+            <ul class="a-fazer__lista" id="lista__a-fazer">
+                <li class="item item__a-fazer">
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="em-andamento">
+            <h2 class="status__titulo">Em andamento</h2>
+            
+            <ul class="em-andamento__lista" id="lista__em-andamento">
+                <li class="item item__em-andamento">
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="feito">
+            <h2 class="status__titulo">Feito</h2>
+            
+            <ul class="feito__lista" id="lista__feito">
+                <li class="item item__feito">
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/frase.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
